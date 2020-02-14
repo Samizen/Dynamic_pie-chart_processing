@@ -1,9 +1,4 @@
-# Dynamic_pie-chart_processing
-A pie-chart that grows dynamically through input of title and angle of increase
+Different short codes I did when learning Processing
 
-The program is supposed to take in 5 inputs through constructor and display random sized, random colored and random growing piechart at random placement on the screen.
-
-
-![](https://github.com/Samizen/Dynamic_pie-chart_processing/blob/master/Capture.PNG)
-
-And also includes other projects
+![](https://github.com/Samizen/Processing_codes/blob/master/nepal_population_in_stages/Capture.PNG)
+![](https://github.com/Samizen/Processing_codes/blob/master/scatter_plot_district/Capture.PNG)
