@@ -1,13 +1,18 @@
+import controlP5.*;
+
 
 color[] palette = {#133463, #365FB7, #799AE0, #F4EFDC, #BA9B65};
 PFont titleFont;
 PFont labelFont;
 PFont miniFont;
+ControlP5 cp5;
+ControlP5 cp6;
 
 Table populationData;
 int rowCount;
 float mx = 79;
-
+int opacity = 20;
+int ellipseColor = 225;
 
 void setup() {
   size(1000, 600);
@@ -16,6 +21,10 @@ void setup() {
   titleFont = loadFont("GillSansMT-Bold-20.vlw");
   labelFont = loadFont("GillSansMT-18.vlw");  
   miniFont = loadFont("GillSansMT-12.vlw");
+  cp5 = new ControlP5(this);
+  cp6 = new ControlP5(this);
+  cp5.addSlider("opacity").setPosition(40, 40).setRange(0, 255);
+  cp6.addSlider("ellipseColor").setPosition(40, 50).setRange(0, 255);
 }
 
 void draw() {
@@ -47,7 +56,7 @@ void draw() {
     
     if(years % 10 == 1){
        line(x, y, width-90, y); 
-       fill(palette[0], 20);
+       fill(palette[0], opacity);
        noStroke();
        quad(x, y, width-80, y, width-80, height-80, x, height-80);
     }
@@ -66,6 +75,8 @@ void draw() {
       println("x2:" + x2);
     }
     
+    
+    
     if((years == 1951) || (years == 2019)) {
       textFont(labelFont);
       text(years, x2-40, y);
@@ -78,9 +89,9 @@ void draw() {
     //Information Line - with Interaction   
     if((mx > 80) && (mx < width-80)) {
       
-      if(abs(mx - x) < 5) {
+      if(abs(mx - x) < 7) {
         strokeWeight(2);
-        stroke(palette[3]);
+        //stroke(palette[3]);
         line(mx, y, mx, height-80);
         textFont(labelFont);
         fill(palette[3]);
@@ -90,9 +101,10 @@ void draw() {
     }  
      
      //Ellipse dot 
-     fill(palette[1]);
+     
+     stroke(ellipseColor);
      int d = 7;
-     fill(230);
+     fill(ellipseColor);
      ellipse(x, y, d, d);
     }
      //noLoop();
