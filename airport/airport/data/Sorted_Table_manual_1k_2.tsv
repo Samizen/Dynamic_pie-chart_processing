@@ -1,6 +1,0 @@
-Trip_Number	Customer_Number	Trip_Country	Customer Country	Trip Country CentroidX	Trip Country Centroid Y	Customer Country Centroid X	Customer Country Centroid Y	Trip_Country	Trip Country CentroidX	Trip Country Centroid Y	Customer Country	Customer Country Centroid X	Customer Country Centroid Y
-1000	10000	Malaysia	Hong Kong	1178	432	1225	278	Malaysia	1178	432	Hong Kong	1225	278
-1001	10001	Hong Kong	Hong Kong	1225	278	1225	278	Hong Kong	1225	278	South Africa	779	601
-1001	10001	Hong Kong	Hong Kong	1225	278	1225	278	United Arab Emirates	727	310	Malta	730	243
-1001	10001	Hong Kong	Hong Kong	1225	278	1225	278	Fiji	1489	512	Greece	764	220
-1143	10001	United Arab Emirates	Hong Kong	727	310	1225	278	Thailand	1160	352	Singapore	1179	432
